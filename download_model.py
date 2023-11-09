@@ -8,7 +8,7 @@ def file_exists(filepath):
 
 def download_file(url, filepath):
     response = requests.get(url, stream=True)
-    total_size_in_bytes = len(response.content)
+    total_size_in_bytes = int(response.headers.get('content-length', 0))
     block_size = 1024
     progress_bar = st.progress(0)
     with open(filepath, 'wb') as file, tqdm(
