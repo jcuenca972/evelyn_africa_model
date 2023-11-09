@@ -13,7 +13,7 @@ def Animal_app():
 
 
     file_path = 'afric_model_tf.h5'
-    file_url = 'https://lermaserver.com/evelyn/file.php'
+    file_url = 'https://lermaserver.com/evelyn/afric_tf.h5'
     if not file_exists(file_path):
         st.warning('File does not exist. Downloading...')
         download_file(file_url, file_path)
