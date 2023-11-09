@@ -1,0 +1,18 @@
+joblib
+numpy
+pandas
+streamlit
+Pillow
+scikit-learn == 1.2.2
+keras
+tensorflow
+mlxtend
+requests
+tqdm
+matplotlib
+seaborn
+opencv-python
+scikit-image
+xgboost
+chardet
+charset-normalizer
